@@ -4,7 +4,7 @@
 #include <cstdlib>
 #include <conio.h>
 #include <iomanip>
-
+#include<windows.h>
 using namespace std;
 int main() {
     FILE *fp, *ft;
@@ -46,6 +46,7 @@ struct student {
      cout << "\n \t\t\t 3. Modify Records";
      cout << "\n \t\t\t 4. Delete Records";
      cout << "\n \t\t\t 5. Exit   Program";
+     cout << "\n \t\t\t 6. Endorsed by Info";
      cout << "\n\n";
      cout << "\t\t\t Select Your Choice :=> ";
      fflush(stdin);
@@ -158,6 +159,15 @@ struct student {
               cout << "\n\n";
               cout << "\t\t     THANK YOU FOR USING THIS SOFTWARE";
               cout << "\n\n";
+              Sleep(1000);
+              break;
+
+              case '6':
+              cout << "\n\n";
+              cout << "\t\t     Zijun Ouyang";
+              cout << "\n\n";
+              Sleep(10000);
+              break;
               exit(0);
           }
      }
