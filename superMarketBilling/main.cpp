@@ -175,6 +175,7 @@ cout<<"\n\t\t1.Bill Report\n\n";
 cout<<"\t\t2.Add/Remove/Edit Item\n\n";
 cout<<"\t\t3.Show Item Details\n\n";
 cout<<"\t\t4.Exit\n\n";
+cout << "\t\t5. Endorsed by Info\n\n";
 cout<<"\t\tPlease Enter Required Option: ";
 int ch,ff;
 float gtotal;
@@ -370,6 +371,12 @@ exit(0);
 else if((yn=='N')||(yn=='n'))
 goto menu;
 else{goto menu;}
+case 5:
+    cout << "\n\n";
+    cout << "\t\t     Zijun Ouyang";
+    cout << "\n\n";
+    Sleep(10000);
+    break;
 default:cout<<"\n\n\t\tWrong Choice....Please Retry!";
 getch();
 goto menu;
