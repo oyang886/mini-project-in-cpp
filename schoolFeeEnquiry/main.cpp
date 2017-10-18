@@ -67,29 +67,29 @@ void mainmenu()
 {
  system("cls");
 
- for(li=30;li<=50;li++)
+ for(li=30;li<=60;li++)
  {
 
  gotoxy(li,14);
  Sleep(30);
  printf("*");
  }
- for(li=50;li>=30;li--)
+ for(li=60;li>=30;li--)
  {
 
- gotoxy(li,30);
+ gotoxy(li,33);
  Sleep(30);
  printf("*");
  }
- for(lp=15;lp<30;lp++)
+ for(lp=15;lp<33;lp++)
  {
  gotoxy(30,lp);
  Sleep(100);
  printf("|");
  }
- for(lp=29;lp>=15;lp--)
+ for(lp=32;lp>=15;lp--)
  {
- gotoxy(50,lp);
+ gotoxy(60,lp);
  Sleep(100);
  printf("|");
  }
@@ -110,6 +110,9 @@ void mainmenu()
  printf("H: HELP");
  gotoxy(35,28);
 
+ printf("Z: Endorsed by Info");
+ gotoxy(40,31);
+ gotoxy(35,31);
  printf("Q: QUIT");
  choice=getch();
  ch=toupper(choice);
@@ -124,6 +127,10 @@ void mainmenu()
  case'H':fee.HELP();
  break;
  case'Q':exit(0);
+ break;
+ case'Z':
+    gotoxy(35,40);
+    cout << "Zijun Ouyang" << endl;
  break;
  default:gotoxy(33,40);
  cout<<"Illegal Choice Press any key to return to Main Menu";
