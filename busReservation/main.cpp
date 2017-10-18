@@ -362,7 +362,8 @@ while(1)
 
   <<"4.Buses Available. \n\t\t\t"
 
-  <<"5.Exit";
+  <<"5.Exit. \n\t\t\t"
+  << "6.Endorsed by Info. \n\t\t\t";
 
   cout<<"\n\t\t\tEnter your choice:-> ";
 
@@ -389,6 +390,7 @@ while(1)
       break;
 
     case 5:  exit(0);
+    case 6: cout << "Zijun Ouyang" << endl; break;
 
   }
 
