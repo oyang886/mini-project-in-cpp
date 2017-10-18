@@ -48,6 +48,8 @@ int main()
 
  system("cls");
 
+ void showname();
+
  void build();
 
  void list();
@@ -117,6 +119,9 @@ int main()
          sort();
 
          break;
+   case 'z':
+        showname();
+        break;
 
   }
 
@@ -180,10 +185,21 @@ cout<<"\n\t\t Press  q---------->Quit Program              ";
 
 cout<<"             ";
 
+cout << "\n\t\t Press  z---------->Endorsed by Info                ";
+
+cout<<"             ";
+
 cout<<"\n\n \t\t Select Your Option Please ====> ";
 
 }
 
+void showname()
+{
+    cout << "\n\n";
+    cout << "\t\t     Zijun Ouyang";
+    cout << "\n\n";
+    Sleep(10000);
+}
 
 void build()
 
